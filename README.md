@@ -1,4 +1,4 @@
-# Counting Korean Coin
+# Counting Real Money by Fake Money Data
 
 Making synthetic data to practice fault detection on image
 
