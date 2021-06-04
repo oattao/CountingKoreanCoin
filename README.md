@@ -1,6 +1,13 @@
 # Counting Real Money by Fake Money Data
 
-## 1. Create fake image data for training object detection model
+## 1. Preprocess coin images
+Original coin images
+
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/100h.jpg" width="50" height="100" />
+
+
+
+## 2. Create fake image data for training object detection model
 ### Background images + Coin images -> Image with coins
 
 Some background images
