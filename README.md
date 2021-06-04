@@ -35,7 +35,7 @@ python synthesize.py --background_path=data/background
 
 We will obtains 400 fake images like this:
 
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(1).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(5).jpg" width="300" height="200" />
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_207.jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_356.jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_213.jpg" width="300" height="200" />
 
 ## 3. Convert image data into TFrecord format for training with Tensorflow Object Detection API
 
