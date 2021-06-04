@@ -1,8 +1,8 @@
 # training
-python train_model.py --model_dir=models/intraining_models/efficientdet --pipeline_config_path=config/pipeline_efficientdet.config
+python train_model.py --model_dir=models/intraining_models/ssd --pipeline_config_path=config/pipeline_ssd.config
 
 # evaluation
-python train_model.py --model_dir=models/intraining_models/efficientdet --pipeline_config_path=config/pipeline_efficientdet.config --checkpoint_dir=models/intraining_models/efficientdet
+python train_model.py --model_dir=models/intraining_models/ssd --pipeline_config_path=config/pipeline_ssd.config --checkpoint_dir=models/intraining_models/ssd
 
 # exporting model
-python export_model.py --input_type=image_tensor --pipeline_config_path=config/pipeline_efficientdet.config --trained_checkpoint_dir=models/intraining_models/efficientdet --output_directory=models/exported_models/efficientdet
+python export_model.py --input_type=image_tensor --pipeline_config_path=config/pipeline_ssd.config --trained_checkpoint_dir=models/intraining_models/ssd --output_directory=models/exported_models/ssd

@@ -59,7 +59,7 @@ viz_utils.visualize_boxes_and_labels_on_image_array(
       agnostic_mode=False)
 
 image = Image.fromarray(image_np_with_detections)
-# image.save('xxx.jpg')
+image.save('data/toshow/output1.jpg')
 image.show()
 
 
