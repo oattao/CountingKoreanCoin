@@ -14,22 +14,16 @@ python make_seed.py
 
 After running the above command, seed coin images are obtained:
 
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/10h.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/10t.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/50h.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/50t.jpg" width="150" height="150" /> 
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/10h.jpg" width="100" height="100" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/10t.jpg" width="100" height="100" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/50h.jpg" width="100" height="100" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/50t.jpg" width="150" height="100100" /> 
 
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/100h.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/100t.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/500h.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/500t.jpg" width="150" height="150" />
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/100h.jpg" width="100" height="100" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/100t.jpg" width="100" height="100" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/500h.jpg" width="100" height="100" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/500t.jpg" width="100" height="100" />
 
 ## 2. Create fake image data for training object detection model
 ### Background images + Coin images -> Image with coins
 
 Some background images
 
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(1).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(5).jpg" width="300" height="200" />
-
-Some coin image
-
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/10h.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/10t.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/50h.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/50t.jpg" width="150" height="150" /> 
-
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/100h.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/100t.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/500h.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/500t.jpg" width="150" height="150" />
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(1).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(5).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(18).jpg" width="300" height="200" />  <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(14).jpg" width="300" height="200" />
 
 Making synthetic data to practice fault detection on image
 
