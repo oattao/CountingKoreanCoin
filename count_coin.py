@@ -29,7 +29,7 @@ path_to_labels = './config/label_map.pbtxt'
 category_index = label_map_util.create_category_index_from_labelmap(path_to_labels, use_display_name=True)
 
 # Load trained model
-path_to_model = './exported_models/ssd/saved_model'
+path_to_model = 'models/exported_models/ssd/saved_model'
 print('Loading model...')
 detect_fn = tf.saved_model.load(path_to_model)
 print('Model loaded.')
@@ -59,7 +59,7 @@ viz_utils.visualize_boxes_and_labels_on_image_array(
       agnostic_mode=False)
 
 image = Image.fromarray(image_np_with_detections)
-image.save('xxx.jpg')
+# image.save('xxx.jpg')
 image.show()
 
 
