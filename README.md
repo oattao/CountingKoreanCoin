@@ -23,9 +23,14 @@ After running the above command, seed coin images are obtained:
 
 Some background images
 
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(1).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(5).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(18).jpg" width="300" height="200" />  <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(14).jpg" width="300" height="200" />
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(1).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(5).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(18).jpg" width="300" height="200" />  <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(14).jpg" width="300" height="200" />  <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(12).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(3).jpg" width="300" height="200" />
 
-Making synthetic data to practice fault detection on image
+Now we have backgrounds and seed coins, we will synthesize fake data by randomly seed coins on backgrounds.
+Run the command:
+```console
+python 
+```
+
 
 Using opencv to make synthetic data
 
