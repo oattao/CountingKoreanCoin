@@ -28,10 +28,12 @@ Some background images
 Now we have backgrounds and seed coins, we will synthesize fake data by randomly seed coins on backgrounds.
 Run the command:
 ```console
-python 
+python synthesize.py --background_path=data/background
+                     --seed_path=data/coin_seeds
+                     --num_images=400
 ```
 
+We will obtains 400 fake images like this:
 
-Using opencv to make synthetic data
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(1).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(5).jpg" width="300" height="200" /> <img 
 
-Using object detection to detect fault on images.
