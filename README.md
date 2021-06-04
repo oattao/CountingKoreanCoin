@@ -55,7 +55,7 @@ python make_tfrecord.py
 python train_model.py --model_dir=models/intraining_models/ssd 
                       --pipeline_config_path=config/pipeline_ssd.config
 ```
-## 5. After training, test with read images:
+## 5. After training, test with real images:
 
 ```console
 python count_coint.py --image_path=data/real_coin_images/c.jpg
