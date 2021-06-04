@@ -61,4 +61,4 @@ python train_model.py --model_dir=models/intraining_models/ssd
 python count_coint.py --image_path=data/real_coin_images/c.jpg
 ```
 ### The output
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/output1.jpg" width="300" height="220" />
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/output1.jpg" width="220" height="300" />
