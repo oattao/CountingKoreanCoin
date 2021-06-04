@@ -1,0 +1,8 @@
+# training
+python model_main_tf2.py --model_dir=models/ssd --pipeline_config_path=config/pipeline.config
+
+# evaluation
+python model_main_tf2.py --model_dir=models/ssd --pipeline_config_path=config/pipeline.config --checkpoint_dir=models/ssd
+
+# exporting model
+python exporter_main_v2.py --input_type=image_tensor --pipeline_config_path=config/pipeline.config --trained_checkpoint_dir=models/ssd --output_directory=exported_models/ssd

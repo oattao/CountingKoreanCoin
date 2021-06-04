@@ -1,0 +1,6 @@
+__pycache__
+.ipynb_checkpoints
+synthetic_images
+*models*
+logs*
+*.record

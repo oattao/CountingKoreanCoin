@@ -1,0 +1,40 @@
+item {
+    id: 1
+    name: '500h'
+}
+
+item {
+    id: 2
+    name: '500t'
+}
+
+
+item {
+    id: 3
+    name: '100h'
+}
+
+item {
+    id: 4
+    name: '100t'
+}
+
+item {
+    id: 5
+    name: '50h'
+}
+
+item {
+    id: 6
+    name: '50t'
+}
+
+item {
+    id: 7
+    name: '10h'
+}
+
+item {
+    id: 8
+    name: '10t'
+}
