@@ -2,6 +2,7 @@ import os
 import time
 import pathlib
 import argparse
+import cv2 as cv
 import numpy as np
 from PIL import Image
 import tensorflow as tf
@@ -11,6 +12,15 @@ from object_detection.utils import visualization_utils as viz_utils
 
 def load_image_to_numpy_array(path):
     return np.array(Image.open(path))
+
+def compute_money(detections, min_score_thresh=.7):
+
+    money_value = {1: 10, 2: 10, 3: 50, 4: 50, 5: 100, 6: 100, 7: 500, 8: 500}
+    money = 0
+    for mclass, score in zip(detections['detection_classes'], detections['detection_scores']):
+        if score > min_score_thresh:
+            money += money_value[mclass]
+    return money
 
 parser = argparse = argparse.ArgumentParser()
 parser.add_argument('--image_path')    
@@ -55,8 +65,12 @@ viz_utils.visualize_boxes_and_labels_on_image_array(
       category_index,
       use_normalized_coordinates=True,
       max_boxes_to_draw=20,
-      min_score_thresh=.30,
+      min_score_thresh=.7,
       agnostic_mode=False)
+
+money = compute_money(detections, min_score_thresh=.7)
+cv.putText(image_np_with_detections, f'Total: {money} won', (50, 150),
+           cv.FONT_HERSHEY_SIMPLEX, 3, (0, 255, 0), 2)
 
 image = Image.fromarray(image_np_with_detections)
 image.save('data/toshow/output1.jpg')
