@@ -25,7 +25,7 @@ Some background images
 
 <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(1).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(5).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(18).jpg" width="300" height="200" />  <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(14).jpg" width="300" height="200" />  <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(12).jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/backgrounds/bg%20(3).jpg" width="300" height="200" />
 
-Now we have backgrounds and seed coins, we will synthesize fake data by randomly seed coins on backgrounds.
+Now we have backgrounds and seed coins, we will synthesize fake data by randomly sawing seed coins on backgrounds.
 Run the command:
 ```console
 python synthesize.py --background_path=data/background
@@ -55,3 +55,9 @@ python make_tfrecord.py
 python train_model.py --model_dir=models/intraining_models/ssd 
                       --pipeline_config_path=config/pipeline_ssd.config
 ```
+## 5. After training, test with read images:
+
+```console
+python count_coint.py --image_path=data/real_coin_images/c.jpg
+```
+### The output
