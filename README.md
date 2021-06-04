@@ -12,7 +12,7 @@ python make_seed.py
       --thresh=120 --morph_iteration=3
 ```
 
-After run tha above command, seed coin images are obtained:
+After running the above command, seed coin images are obtained:
 
 <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/10h.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/10t.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/50h.jpg" width="150" height="150" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_seeds/50t.jpg" width="150" height="150" /> 
 
