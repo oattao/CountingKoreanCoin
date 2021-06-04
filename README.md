@@ -52,6 +52,6 @@ python make_tfrecord.py
 
 ## 4. Training 
 ```console
-python train_model.py --model_dir=models/intraining_models/efficientdet 
-                      --pipeline_config_path=config/pipeline_efficientdet.config
+python train_model.py --model_dir=models/intraining_models/ssd 
+                      --pipeline_config_path=config/pipeline_ssd.config
 ```
