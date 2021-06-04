@@ -63,6 +63,10 @@ python count_coint.py --image_path=data/real_coin_images/c.jpg
 ### The output
 <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/output1.jpg" width="220" height="300" />
 
-## 6. To download the fake data:
+## 6. To download 
+the fake data:
 https://drive.google.com/drive/folders/1oC-utM77Pgzykd1lMt8RlUmNsmyoMThq?usp=sharing
+
+the trained ssd model:
+https://drive.google.com/drive/folders/10niXINYoADLxuuo6W-PI_aXzZNh02h6J?usp=sharing
 
