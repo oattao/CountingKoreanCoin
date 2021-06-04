@@ -35,7 +35,14 @@ python synthesize.py --background_path=data/background
 
 We will obtains 400 fake images like this:
 
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_207.jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_356.jpg" width="300" height="200" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_213.jpg" width="300" height="200" />
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_207.jpg" width="300" height="220" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_356.jpg" width="300" height="220" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_213.jpg" width="300" height="220" />
+
+and the corresponding bounding box annotation:
+```console
+t_207.jpg 847,530,1024,706,7 576,751,755,928,6 406,197,612,402,5 110,233,273,403,6 666,178,869,380,4 325,512,498,684,7 1040,155,1258,379,3 132,659,299,828,7 1120,433,1289,606,6
+t_213.jpg 990,496,1104,609,5 565,585,662,681,7 684,391,811,518,2 121,514,258,649,1 1185,826,1303,945,4 1106,303,1231,428,2 502,700,597,795,6 1168,613,1298,744,2 211,96,353,237,1 541,196,667,322,2 1107,115,1241,250,1 369,662,486,780,5
+t_356.jpg 657,175,849,368,1 241,431,412,600,2 425,678,615,872,0 990,306,1185,502,1 262,104,396,239,6 1057,670,1199,810,6 818,555,1014,751,1 173,793,314,935,6 442,367,577,502,7
+```
 
 ## 3. Convert image data into TFrecord format for training with Tensorflow Object Detection API
 
