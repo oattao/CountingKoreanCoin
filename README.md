@@ -3,7 +3,7 @@
 ## 1. Preprocess coin images
 Original coin images
 
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/100h.jpg" width="50" height="100" />
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/100h.jpg" width="108" height="144" />
 
 
 
