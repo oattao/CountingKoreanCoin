@@ -5,6 +5,10 @@ Original coin images
 
 <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/10h.jpg" width="108" height="144" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/10t.jpg" width="108" height="144" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/50h.jpg" width="108" height="144" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/50t.jpg" width="108" height="144" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/100h.jpg" width="108" height="144" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/100t.jpg" width="108" height="144" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/500h.jpg" width="108" height="144" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/coin_images/500t.jpg" width="108" height="144" />
 
+```console
+python make_seed.py --input_path=data/coin_images --output_path=data/coin_seeds --thresh=120 --morph_iteration=3
+```
+
 ## 2. Create fake image data for training object detection model
 ### Background images + Coin images -> Image with coins
 
