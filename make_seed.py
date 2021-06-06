@@ -18,9 +18,9 @@ thresh = args.thresh
 morph_iteration = args.morph_iteration
 
 # prepare output foloder
-if os.path.exists(output_path):
-    shutil.rmtree(output_path)
-os.mkdir(output_path)
+# if os.path.exists(output_path):
+#     shutil.rmtree(output_path)
+# os.mkdir(output_path)
 
 file_list = glob.glob(f'{input_path}/*.jpg')
 for fname in file_list:

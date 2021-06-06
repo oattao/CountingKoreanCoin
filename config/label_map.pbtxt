@@ -38,3 +38,13 @@ item {
     id: 8
     name: '10t'
 }
+
+item {
+    id: 9
+    name: '10h_o'
+}
+
+item {
+    id: 10
+    name: '10t_o'
+}

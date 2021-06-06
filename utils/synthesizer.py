@@ -5,13 +5,13 @@ import cv2 as cv
 import imutils
 
 
-def check_holes_overlap(xy, hsws, cx, cy, hs, ws):
+def check_holes_overlap(xy, hsws, cx, cy, hs, ws, overlap_ratio=0.7):
     if len(xy) == 0:
         return False
     for i in range(len(xy)):
         _cx, _cy = xy[i]
         _hs, _ws = hsws[i]
-        if (abs(cx - _cx) < ((ws + _ws) // 2)) and (abs(cy - _cy) < ((hs + _hs) // 2)):
+        if (abs(cx - _cx) < ((ws + _ws) // 2)*overlap_ratio) and (abs(cy - _cy) < ((hs + _hs) // 2)*overlap_ratio):
             return True
     return False
  
@@ -49,8 +49,8 @@ def random_crop_background(background, max_crop=10):
 
 def random_brightness_background(background):
     if random.random() > 0.4:
-        alpha = random.random() + random.randrange(0, 2)
-        beta = random.randrange(5, 10)
+        alpha = random.random() + random.randrange(1, 3)
+        beta = random.randrange(0, 100)
         background = cv.convertScaleAbs(background, alpha=alpha, beta=beta)
     return background
 
@@ -58,10 +58,9 @@ def random_process_coin(coin, scale_ratio):
     h, w = coin.shape[:2]
 
     # random_brightness
-    """
     if random.random() > 0.5:
         alpha = random.random() + random.randrange(1, 2)
-        beta = random.randrange(56, 76)
+        beta = random.randrange(20, 70)
         coin = cv.convertScaleAbs(coin, alpha=alpha, beta=beta)
         x = w//2
         y = h//2
@@ -69,7 +68,6 @@ def random_process_coin(coin, scale_ratio):
         mask = np.zeros((h, w), dtype=np.uint8)
         cv.circle(mask, (x, y), r, (255), -1)
         coin = cv.bitwise_and(coin, coin, mask=mask)
-    """
 
     # random scale
     h = h/scale_ratio
@@ -77,8 +75,10 @@ def random_process_coin(coin, scale_ratio):
     if random.random() > 0.5:
         scale_x = random.random()/20
         scale_y = random.random()/20
-        h = h - h*scale_y
-        w = w - w*scale_x
+        sign = 1 if random.random() > 0.5 else -1
+        h = h + sign*h*scale_y
+        sign = 1 if random.random() > 0.5 else -1
+        w = w + sign*w*scale_x
     h, w = int(h), int(w)
     coin = cv.resize(coin, (w, h))
 
@@ -138,8 +138,8 @@ class CoinImageSynthesizer():
                 h, w = coin.shape[:2]
 
                 # random position x and y
-                x = random.randrange(w, W-w)
-                y = random.randrange(h, H-h)
+                x = random.randrange(w//2, W-w//2)
+                y = random.randrange(h//2, H-h//2)
 
                 if check_holes_overlap(xy, hw, x, y, h, w):
                     patient += 1
