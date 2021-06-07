@@ -41,10 +41,10 @@ item {
 
 item {
     id: 9
-    name: '10h_o'
+    name: '10ho'
 }
 
 item {
     id: 10
-    name: '10t_o'
+    name: '10to'
 }
