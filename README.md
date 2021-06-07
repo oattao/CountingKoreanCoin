@@ -35,7 +35,7 @@ python synthesize.py --background_path=data/background
 
 We will obtains 400 fake images like this:
 
-<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_207.jpg" width="300" height="220" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_356.jpg" width="300" height="220" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_213.jpg" width="300" height="220" />
+<img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_207.jpg" width="300" height="420" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_356.jpg" width="300" height="420" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/t_213.jpg" width="300" height="420" />
 
 and the corresponding bounding box annotation:
 ```console
