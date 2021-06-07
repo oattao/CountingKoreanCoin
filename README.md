@@ -55,10 +55,11 @@ python make_tfrecord.py
 python train_model.py --model_dir=models/intraining_models/ssd 
                       --pipeline_config_path=config/pipeline_ssd.config
 ```
-## 5. After training, test with real images:
+## 5. After training, count coins on real images:
 
 ```console
-python count_coint.py --image_path=data/real_coin_images/c.jpg
+python count_coint.py --image_path=data/real_coin_images/c.jpg 
+                      --model_path=models/exported_models/ssd
 ```
 ### The output
 <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/output1.jpg" width="220" height="300" /> <img src="https://github.com/oattao/CountingKoreanCoin/blob/master/data/toshow/output2.jpg" width="220" height="300" />
