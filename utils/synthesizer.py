@@ -99,7 +99,7 @@ class CoinImageSynthesizer():
 
     def parse_coin_name(self, fname):
         basename = os.path.basename(fname)
-        basename = basename.split('.')[0]
+        basename = basename.split('.')[0].split('_')[0]
         return self.label_dict[basename]
 
     def generate_backgound(self):
